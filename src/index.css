@@ -1,5 +1,51 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.search-box {
+    z-index: 1;
+    position: fixed;
+    top: 55px;
+    left: 10px;
+}
+
+.search-field {
+    width: 320px;
+    padding: 5px;
+}
+
+ul {
+    background: white;
+    padding: 0px;
+    margin: 0;
+}
+
+.location-item {
+    cursor: pointer;
+    padding: 3px;
+}
+
+.location-item:hover {
+    background-color: red;
+}
+
+.toggle {
+    padding: 5px;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+    width: 334px;
+}
+
+@media only screen and (max-width: 350px) {
+  .search-box {
+    width: 200px;
+  }
+  .search-field {
+    width: 185px;
+  }
+  .toggle {
+    width: 200px;
+  }
 }
